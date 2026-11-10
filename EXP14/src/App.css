@@ -1,0 +1,39 @@
+* { box-sizing: border-box; }
+#root { min-height: 100vh; }
+.app-container { min-height: 100vh; background: #f5f1e9; color: #24221e; }
+.topbar { height: 76px; padding: 0 8%; background: #191815; display: flex; justify-content: space-between; align-items: center; color: #fff; border-bottom: 1px solid #39352d; }
+.brand { display: flex; align-items: center; gap: 12px; font-size: 17px; font-weight: 800; letter-spacing: 2px; }
+.brand-icon { width: 36px; height: 36px; border: 1px solid #c6a76b; color: #d9bd86; display: grid; place-items: center; border-radius: 9px; font-family: Georgia, serif; font-size: 21px; }
+.gold { color: #d4b477; }
+.api-status { color: #d9bd86; font-size: 11px; letter-spacing: 1.5px; }
+.main-content { width: min(920px, 88%); margin: 0 auto; padding: 75px 0 30px; }
+.intro { margin-bottom: 38px; }
+.eyebrow { color: #a0834e; font-size: 11px; font-weight: 700; letter-spacing: 2px; margin-bottom: 12px; }
+.intro h1 { font-family: Georgia, "Times New Roman", serif; font-size: clamp(36px, 6vw, 54px); font-weight: 500; letter-spacing: -1.5px; margin: 0; color: #211f1b; }
+.intro h1 span { color: #a0834e; }
+.subtitle { color: #777166; font-size: 15px; margin-top: 14px; }
+.request-card, .result-card { background: #fffefa; border: 1px solid #e6dfd2; border-radius: 14px; padding: 30px; margin-bottom: 24px; box-shadow: 0 8px 30px rgba(45, 37, 24, .045); }
+.section-heading, .result-heading { display: flex; justify-content: space-between; align-items: center; }
+.section-heading h2, .result-heading h2 { font-family: Georgia, "Times New Roman", serif; font-size: 25px; font-weight: 500; margin: 0; }
+.method, .success-status { padding: 8px 13px; border-radius: 5px; font-size: 10px; font-weight: 800; letter-spacing: 1px; }
+.method { background: #eee6d5; color: #806333; }
+.endpoint { margin: 25px 0 20px; padding: 17px; border: 1px solid #e8e0d2; border-radius: 7px; background: #f7f4ed; color: #665d4d; font-family: Consolas, monospace; font-size: 13px; overflow-wrap: anywhere; }
+.fetch-button { width: 100%; padding: 16px 20px; background: #24221e; border: 1px solid #24221e; border-radius: 7px; color: #f8f4eb; font-size: 14px; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center; transition: .25s ease; }
+.fetch-button:hover:not(:disabled) { background: #a0834e; border-color: #a0834e; color: #fff; }
+.fetch-button:disabled { opacity: .65; cursor: not-allowed; }
+.fetch-button span { font-size: 20px; }
+.loading-message, .error-message { margin: 18px 0 0; font-size: 13px; }
+.loading-message { color: #8b7043; }
+.error-message { color: #b33b32; }
+.success-status { background: #e9efe5; color: #526b48; }
+.student-profile { display: flex; align-items: center; gap: 17px; margin: 28px 0; padding-bottom: 25px; border-bottom: 1px solid #ece6dc; }
+.avatar { width: 55px; height: 55px; border-radius: 50%; display: grid; place-items: center; background: #28251f; color: #d9bd86; font-family: Georgia, serif; font-size: 25px; }
+.student-profile h3 { font-family: Georgia, "Times New Roman", serif; font-size: 21px; font-weight: 500; margin: 0 0 5px; }
+.student-profile p { color: #8a8377; font-size: 12px; margin: 0; }
+.details-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+.detail-item { padding: 19px; background: #f7f4ed; border: 1px solid #eee8dd; border-radius: 8px; min-width: 0; }
+.detail-item span { display: block; color: #9b8b70; font-size: 10px; font-weight: 700; letter-spacing: 1.3px; margin-bottom: 10px; }
+.detail-item strong { display: block; color: #302d27; font-size: 14px; overflow-wrap: anywhere; }
+.data-note { margin-top: 20px; color: #898174; font-size: 11px; line-height: 1.5; }
+footer { display: flex; justify-content: space-between; gap: 15px; padding: 25px 2px; color: #918879; font-size: 10px; letter-spacing: 1.2px; }
+@media (max-width: 600px) { .topbar { padding: 0 6%; } .main-content { width: 90%; padding-top: 48px; } .request-card, .result-card { padding: 21px; } .details-grid { grid-template-columns: 1fr; } .endpoint { font-size: 11px; } footer { flex-direction: column; } }
