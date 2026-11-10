@@ -242,17 +242,11 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 
 ```
 
-## Expected Output
-Initially, the page displays the Student Information dashboard and the **View Student Details** button. When clicked, the app shows a loading message while the GET request is in progress. On a successful response, the following sample data is displayed:
+## Output
+<img width="1667" height="903" alt="image" src="https://github.com/user-attachments/assets/d54f79c5-d6a4-4f9e-aa33-6e36961115b9" />
 
-| Field | API response |
-|---|---|
-| Student ID | 1 |
-| Full Name | Leanne Graham |
-| Email Address | Sincere@april.biz |
-| City | Gwenborough |
+<img width="1016" height="835" alt="image" src="https://github.com/user-attachments/assets/42ba344d-7176-471c-b988-87cdffbef01c" />
 
-The screenshots in the `screenshots` folder are illustrative interface previews. Run the application with an internet connection to capture the live API response.
 
 ## Observation
 - The `fetch()` function sends an HTTP GET request to the API endpoint.
@@ -265,57 +259,3 @@ The screenshots in the `screenshots` folder are illustrative interface previews.
 
 ## Result
 Thus, a React application was developed successfully to fetch sample student details from a REST API and display the returned JSON data using React Hooks, with loading and error handling.
-
-## Viva Questions and Answers
-
-**1. What is an API?**  
-An API (Application Programming Interface) allows different software applications to communicate and exchange data.
-
-**2. What is `fetch()`?**  
-`fetch()` is a JavaScript function used to make HTTP requests.
-
-**3. What is JSON?**  
-JSON (JavaScript Object Notation) is a lightweight data format used to exchange information.
-
-**4. Why is `useState()` used?**  
-It stores component data and triggers a re-render when the state changes.
-
-**5. What is the purpose of `async` and `await`?**  
-They make asynchronous JavaScript operations easier to write and understand.
-
-**6. What does `response.ok` check?**  
-It indicates whether the HTTP response status is in the successful range.
-
-**7. Why is `response.json()` used?**  
-It reads and parses the response body as JSON.
-
-**8. What is the purpose of `finally`?**  
-It executes after the `try` or `catch` block, making it useful for resetting the loading state.
-
-**9. What is the difference between frontend and backend?**  
-The frontend handles the user interface; the backend handles server-side logic and data operations.
-
-**10. Is JSONPlaceholder a real student database?**  
-No. It is a public testing API that provides sample user information.
-
-## How to Run
-Open the project folder in VS Code and run these commands in the terminal:
-
-```bash
-npm install
-npm run dev
-```
-
-Open the local URL shown in the terminal, usually `http://localhost:5173/`.
-
-## GitHub Upload
-Create a public GitHub repository named `React-Student-API-Integration`. Do not initialize it with another README. Then run the following commands from the project root (replace `YOUR-USERNAME`):
-
-```bash
-git init
-git add .
-git commit -m "Add React Student API Experiment 14"
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/React-Student-API-Integration.git
-git push -u origin main
-```
